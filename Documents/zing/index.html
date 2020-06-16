@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zing MP3 | Nghe tải nhạc chất lượng cao trên desktop, mobile và TV</title>
+	<link rel="icon" type="image/png" href="https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/icon_zing_mp3_60.png" />
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="font/css/all.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body id="body">
+	<div class="container">
+		<div class="header" id="header">
+			<div class="sub">
+				<div class="sub-icon" onclick="topFunction()" id="myBtn" style="cursor: pointer";>
+					<i class="fal fa-chevron-up" id="myIcon"></i>
+				</div>
+				<div class="sub-icon">
+					<a href="index.html">
+						<i class="fal fa-book"></i>
+					</a>
+				</div>
+			</div>
+
+
+			<div class="flex m-menu" id="mobile-menu">
+				<div class="m-menu-container">
+					<div class="flex flex-col m-menu-login">
+						<div class="flex m-menu-login-top">
+							<div class="m-menu-login-logo">
+								<a href="index.html">
+									<img src="https://avatar.talk.zdn.vn/default.jpg">
+								</a>
+							</div>
+							<a class="m-menu-login-info" href="index.html">
+								Đăng Nhập
+							</a>
+							<div class="m-menu-cancel" onclick="cancelMenu()">
+								<i class="fal fa-times"></i>
+							</div>
+						</div>
+						<div class="flex m-menu-login-bottom">
+							<div class="vip-btn">Mua VIP ngay</div>
+						</div>
+					</div>
+					<ul class="flex flex-col m-menu-list">
+						<div class="flex m-menu-item">
+							<i class="fas fa-home"></i>
+							<a href="index.html" class="m-menu-active">TRANG CHỦ</a>
+						</div>
+						<div class="flex m-menu-item">
+							<i class="fas fa-home"></i>
+							<a href="index.html">#ZINGCHART</a>
+						</div>
+						<div class="flex m-menu-item">
+							<i class="fas fa-home"></i>
+							<a href="index.html">TOP100</a>
+						</div>
+						<div class="flex m-menu-item">
+							<i class="fas fa-home"></i>
+							<a href="index.html">CHỦ ĐỀ</a>
+						</div>
+						<div class="flex m-menu-item">
+							<i class="fas fa-home"></i>
+							<a href="index.html">MV</a>
+						</div>
+						<div class="flex m-menu-item">
+							<i class="fas fa-home"></i>
+							<a href="index.html">ALBUM</a>
+						</div>
+						<div class="flex m-menu-item">
+							<i class="fas fa-home"></i>
+							<a href="index.html">NHẠC CÁ NHÂN</a>
+						</div>
+					</ul>
+				</div>
+				<div class="m-menu-overlay" onclick="cancelMenu()"></div>
+			</div>
+
+			<div class="flex flex-col header-top">
+				<div class="menu-container" id="height">
+					<div class="flex menu" id="menu">
+					<div class="logo">
+						<a href="index.html" class="z-logo"></a>
+					</div>
+					<div class="flex navbar" id="navbar">
+						<ul class="flex navbar-list">
+							<li class="hide-tablet">
+								<a href="index.html" class="ul-text active">TRANG CHỦ</a>
+							</li>
+							<li id="zingchart">
+								<a href="index.html" class="ul-text">#ZINGCHART</a>
+								<div class="flex submenu">
+									<div class="flex flex-col">
+										<div class="submenu-title">#ZINGCHART</div>
+										<div class="submenu-child">Bài hát</div>
+										<div class="submenu-child">MV</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">TUẦN</div>
+										<div class="submenu-child">Bài hát</div>
+										<div class="submenu-child">MV</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">US-UK CHART</div>
+										<div class="submenu-child">Bài hát</div>
+										<div class="submenu-child">MV</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">KPOP CHART</div>
+										<div class="submenu-child">Bài hát</div>
+										<div class="submenu-child">MV</div>
+									</div>
+								</div>
+							</li>
+							<li class="hide-tablet hide1 mobile">
+								<a href="index.html" class="ul-text">TOP100</a>
+								<div class="flex submenu">
+									<div class="flex flex-col">
+										<div class="submenu-title">VIỆT NAM</div>
+										<div class="submenu-child">Nhạc Trẻ</div>
+										<div class="submenu-child">Nhạc Trữ Tình</div>
+										<div class="submenu-child">Quê Hương</div>
+										<div class="submenu-child">Nhạc Cách Mạng</div>
+										<div class="submenu-child">Rap / Hip Hop Việt</div>
+										<div class="submenu-child">Rock Việt</div>
+										<div class="submenu-child">Dance Việt</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">ÂU MỸ</div>
+										<div class="submenu-child">Pop</div>
+										<div class="submenu-child">Rock</div>
+										<div class="submenu-child">Rap / Hip Hop</div>
+										<div class="submenu-child">Country</div>
+										<div class="submenu-child">Electronic / Dance</div>
+										<div class="submenu-child">R&B / Soul</div>
+										<div class="submenu-child">Audiophile</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">CHÂU Á</div>
+										<div class="submenu-child">Hàn Quốc</div>
+										<div class="submenu-child">Nhận Bản</div>
+										<div class="submenu-child">Hoa Ngữ</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">HOÀ TẤU</div>
+										<div class="submenu-child">Classical</div>
+										<div class="submenu-child">Piano</div>
+										<div class="submenu-child">Guitar</div>
+										<div class="submenu-child">Violin</div>
+										<div class="submenu-child">Cello</div>
+										<div class="submenu-child">Saxophone</div>
+										<div class="submenu-child">Nhạc Cụ Khác</div>
+									</div>
+								</div>
+							</li>
+							<li class="tablet hide-tablet hide1" id="none1">
+								<a href="index.html" class="ul-text">CHỦ ĐỀ</a>
+								<div class="flex submenu">
+									<div class="flex flex-col">
+										<div class="submenu-title">VIỆT NAM</div>
+										<div class="submenu-child">Nhạc Trẻ</div>
+										<div class="submenu-child">Nhạc Trữ Tình</div>
+										<div class="submenu-child">Quê Hương</div>
+										<div class="submenu-child">Nhạc Cách Mạng</div>
+										<div class="submenu-child">Rap / Hip Hop Việt</div>
+										<div class="submenu-child">Rock Việt</div>
+										<div class="submenu-child">Dance Việt</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">ÂU MỸ</div>
+										<div class="submenu-child">Pop</div>
+										<div class="submenu-child">Rock</div>
+										<div class="submenu-child">Rap / Hip Hop</div>
+										<div class="submenu-child">Country</div>
+										<div class="submenu-child">Electronic / Dance</div>
+										<div class="submenu-child">R&B / Soul</div>
+										<div class="submenu-child">Audiophile</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">CHÂU Á</div>
+										<div class="submenu-child">Hàn Quốc</div>
+										<div class="submenu-child">Nhận Bản</div>
+										<div class="submenu-child">Hoa Ngữ</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">HOÀ TẤU</div>
+										<div class="submenu-child">Classical</div>
+										<div class="submenu-child">Piano</div>
+										<div class="submenu-child">Guitar</div>
+										<div class="submenu-child">Violin</div>
+										<div class="submenu-child">Cello</div>
+										<div class="submenu-child">Saxophone</div>
+										<div class="submenu-child">Nhạc Cụ Khác</div>
+									</div>
+								</div>
+							</li>
+							<li class="hide tablet hide-tablet hide1" id="none2">
+								<a href="index.html" class="ul-text">MV</a>
+								<div class="flex submenu">
+									<div class="flex flex-col">
+										<div class="submenu-title">VIỆT NAM</div>
+										<div class="submenu-child">Nhạc Trẻ</div>
+										<div class="submenu-child">Nhạc Trữ Tình</div>
+										<div class="submenu-child">Quê Hương</div>
+										<div class="submenu-child">Nhạc Cách Mạng</div>
+										<div class="submenu-child">Rap / Hip Hop Việt</div>
+										<div class="submenu-child">Rock Việt</div>
+										<div class="submenu-child">Dance Việt</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">ÂU MỸ</div>
+										<div class="submenu-child">Pop</div>
+										<div class="submenu-child">Rock</div>
+										<div class="submenu-child">Rap / Hip Hop</div>
+										<div class="submenu-child">Country</div>
+										<div class="submenu-child">Electronic / Dance</div>
+										<div class="submenu-child">R&B / Soul</div>
+										<div class="submenu-child">Audiophile</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">CHÂU Á</div>
+										<div class="submenu-child">Hàn Quốc</div>
+										<div class="submenu-child">Nhận Bản</div>
+										<div class="submenu-child">Hoa Ngữ</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">HOÀ TẤU</div>
+										<div class="submenu-child">Classical</div>
+										<div class="submenu-child">Piano</div>
+										<div class="submenu-child">Guitar</div>
+										<div class="submenu-child">Violin</div>
+										<div class="submenu-child">Cello</div>
+										<div class="submenu-child">Saxophone</div>
+										<div class="submenu-child">Nhạc Cụ Khác</div>
+									</div>
+								</div>
+							</li>
+							<li class="hide hide-tablet hide1 hide2" id="none3">
+								<a href="index.html" class="ul-text">ALBUM</a>
+								<div class="flex submenu">
+									<div class="flex flex-col">
+										<div class="submenu-title">VIỆT NAM</div>
+										<div class="submenu-child">Nhạc Trẻ</div>
+										<div class="submenu-child">Nhạc Trữ Tình</div>
+										<div class="submenu-child">Quê Hương</div>
+										<div class="submenu-child">Nhạc Cách Mạng</div>
+										<div class="submenu-child">Rap / Hip Hop Việt</div>
+										<div class="submenu-child">Rock Việt</div>
+										<div class="submenu-child">Dance Việt</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">ÂU MỸ</div>
+										<div class="submenu-child">Pop</div>
+										<div class="submenu-child">Rock</div>
+										<div class="submenu-child">Rap / Hip Hop</div>
+										<div class="submenu-child">Country</div>
+										<div class="submenu-child">Electronic / Dance</div>
+										<div class="submenu-child">R&B / Soul</div>
+										<div class="submenu-child">Audiophile</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">CHÂU Á</div>
+										<div class="submenu-child">Hàn Quốc</div>
+										<div class="submenu-child">Nhận Bản</div>
+										<div class="submenu-child">Hoa Ngữ</div>
+									</div>
+									<div class="flex flex-col">
+										<div class="submenu-title">HOÀ TẤU</div>
+										<div class="submenu-child">Classical</div>
+										<div class="submenu-child">Piano</div>
+										<div class="submenu-child">Guitar</div>
+										<div class="submenu-child">Violin</div>
+										<div class="submenu-child">Cello</div>
+										<div class="submenu-child">Saxophone</div>
+										<div class="submenu-child">Nhạc Cụ Khác</div>
+									</div>
+								</div>
+							</li>
+							<li class="hide hide-tablet hide1 hide2" id="none4">
+								<a href="index.html" class="ul-text">NGHỆ SĨ</a>
+								<div class="flex artist">
+									<div class="flex flex-col">
+										<div class="submenu-child">Việt Nam</div>
+										<div class="submenu-child">Hoa Ngữ</div>
+										<div class="submenu-child">Hàn Quốc</div>
+										<div class="submenu-child">Nhật Bản</div>
+										<div class="submenu-child">Âu Mĩ</div>
+										<div class="submenu-child">Hoà Tấu</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="index.html" class="ul-text">NHẠC CÁ NHÂN</a>
+							</li>
+							<li class="hide hide1 mobile">
+								<a href="index.html">
+									<div class="vip">VIP</div>
+								</a>
+							</li>
+							<li class="hide hide1 mobile">
+								<a href="index.html">
+									<div class="zma">ZMA</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="search" id="search">
+						<form>
+	 						<input class="input" id="input" type="text" name="search" placeholder="Nhập tên bài hát, ca sĩ hoặc mv...">
+						</form>
+					</div>
+
+					<div class="m-search">
+						<i class="fa fa-search"></i>
+					</div>
+
+					<div class="m-menu-icon" onclick="mMenu()" style="cursor: pointer;">
+						<i class="fas fa-bars"></i>
+					</div>
+
+					<div class="flex login">
+						<div class="login-logo">
+							<a href="index.html">
+								<img src="https://avatar.talk.zdn.vn/default.jpg">
+							</a>
+						</div>
+						<a class="login-info hide" href="index.html">Đăng Nhập
+						</a>
+						<div class="dropdown-icon">
+							<div id="icon">
+	  							<i class="fas fa-angle-down" style="cursor: pointer;" onclick="showOn()"></i>
+							</div>
+						</div>
+					</div>
+					
+					<div class="hidden-content">
+						<div class="flex flex-col login-more-option" id="turnOn">
+				  			<div class="tren flex-col">
+					  			<a class="flex darkmode" href="index.html">
+				 					<div class="darkmode-icon"></div>
+					  				<p class="darkmode-content">Nền tối</p>
+					 				<div class="darkmode-button"></div>
+								</a>
+				  			</div>
+				 			<div class="flex duoi">
+				  				<div class="buyvip" id="change-bg" onclick="changeBackground()">
+				  					<a href="index.html">Mua VIP ngay</a>
+				  				</div>
+				 			</div>
+				 		</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+
+				<div class="banner">
+					<!-- <div id="demo" class="carousel slide" data-ride="carousel" data-interval="500">
+					  	<ul class="carousel-indicators">
+					    	<li data-target="#demo" data-slide-to="0" class="active"></li>
+					    	<li data-target="#demo" data-slide-to="1"></li>
+					    	<li data-target="#demo" data-slide-to="2"></li>
+					  	</ul>
+					  	<div class="carousel-inner">
+					    	<div class="carousel-item active">
+					      		<img src="https://photo-zmp3.zadn.vn/banner/3/f/e/c/3fecf976c107319853c88492776ee64e.jpg"> 
+					    	</div>
+						    <div class="carousel-item">
+						      	<img src="https://photo-zmp3.zadn.vn/banner/9/7/0/e/970e06bf03885b9b4b472aff090e182f.jpg">
+						    </div>
+						    <div class="carousel-item">
+						      	<img src="https://photo-zmp3.zadn.vn/banner/2/0/d/e/20de5a33a1e10defa5fd56c62bce8a6a.jpg">
+					    	</div>
+					  	</div>
+					</div> -->
+					<div class="slide">
+						<img src="https://photo-zmp3.zadn.vn/banner/3/f/e/c/3fecf976c107319853c88492776ee64e.jpg">
+						<img src="https://photo-zmp3.zadn.vn/banner/9/7/0/e/970e06bf03885b9b4b472aff090e182f.jpg">
+						<img src="https://photo-zmp3.zadn.vn/banner/2/0/d/e/20de5a33a1e10defa5fd56c62bce8a6a.jpg">
+						<img src="https://adtima-media.zadn.vn/2019/12/15cfe54c-5868-4d43-a518-dd3b3ecd158a.jpg">
+						<img src="https://photo-zmp3.zadn.vn/banner/c/c/9/9/cc99b551061707697c3b37c72bc78700.jpg">
+						<img src="https://photo-zmp3.zadn.vn/banner/4/f/d/6/4fd6d967f5d9a933ba6af57c45d34105.jpg">
+					</div>
+					<div class="flex thumnail">
+						<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/3/0/c/230c62cdb5f2b0849b413dcb26f58cb9.jpg"  class="a">
+						<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/e/9/8/9/e9894b2b63c469340c4f2be753bcb2af.jpg"  class="b">
+						<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/b/7/6/e/b76e867926ae26ee3c7572a6f3db4048.jpg"  class="c">
+						<img src="https://adtima-media.zadn.vn/2019/12/a659dd30-1ec4-4b08-a386-3eb401b1584a.png"  class="e">
+						<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/1/d/9/d/1d9de598cd33a21b5f9f124d8a671364.jpg"  class="d">
+						<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/a/c/9/fac92d03a1743743ba596dd365765750.jpg"  class="f">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="main">
+			<div class="flex flex-col center">
+				<div class="flex flex-col box-container">
+					<div class="box-title">rộng ràng tối thứ sáu</div>
+					<div class="flex box-list">
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/4/e/6/7/4e67502c1435dba85664359b1aed6ce6.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">nghe thôi... đã thấy vui!</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/4/e/6/7/4e67502c1435dba85664359b1aed6ce6.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">nghe thôi... đã thấy vui!</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/3/9/5/9/3959fb18039b95480913f75997372659.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">nghe thôi... đã thấy xót xa!</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/b/a/7/3/ba73d0acc07dde3a384b34157f331a2e.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">hôm nay anh buồn</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/9/d/5/a/9d5a72a3f37b5109228174b123d23f6e.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">níu kéo hay buông tay?</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/5/d/8/3/5d836fa9b7cb71f9ee170617a229b3f3.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">đời lạ lắm</div>
+						</div>
+					</div>
+					<div class="flex more">
+						<div class="left">
+							<i class="fal fa-chevron-left go-icon"></i>
+						</div>
+						<div class="right">
+							<i class="fal fa-chevron-right go-icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col box-container">
+					<div class="box-title">những ngày xưa ấy</div>
+					<div class="flex box-list">
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/6/4/6/a/646a541e13c6912feb5248a8abea8647.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">chặng đường rock việt</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/9/2/8/7/9287743e3138f31eb17c8adde46a5d6f.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">nhạc trẻ hay nhất thế hệ 8x</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/4/2/c/e/42ced970b46e78c615f136a3adcafb1d.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">nhạc việt hay nhất những năm 2000</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/b/8/d/1/b8d1a9f8c8da906994fe6b41be11e65e.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">nhạc vàng hay nhất</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/2/3/3/4/233460fcd58ede31d135abb8cafb7cac.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">nhạc hoà tấu trịnh công sơn</div>
+						</div>
+					</div>
+					<div class="flex more">
+						<div class="left">
+							<i class="fal fa-chevron-left go-icon"></i>
+						</div>
+						<div class="right">
+							<i class="fal fa-chevron-right go-icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col box-container">
+					<div class="box-title">ZMA 2019</div>
+					<div class="flex box-list">
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/0/9/4/0/094059eded14948af702b782834f28ea.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">flashback #ZMA</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/9/0/e/b/90eb2f2b4b809da7cc121e56a00c24a9.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 20 nam nghệ sĩ được yêu thích #ZMA2019</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/f/d/3/2/fd32c1df0a9ffe65e7e91470fa804ec9.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 20 ca khúc nhạc phim được yêu thích #ZMA2019</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/9/0/5/4/90546a94274d76cd5f8747d0a781cdf4.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 20 ca khúc Pop/Ballad được yêu thích #ZMA2019</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/0/9/f/a/09fa8aa8bc9a08d60d9e55557cb0d93d.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 20 nữ nghệ sĩ được yêu thích #ZMA2019</div>
+						</div>
+					</div>
+					<div class="flex more">
+						<div class="left">
+							<i class="fal fa-chevron-left go-icon"></i>
+						</div>
+						<div class="right">
+							<i class="fal fa-chevron-right go-icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="flex choice">
+					<div class="flex choice-list">
+						<div class="choice-item">
+							<div class="choice-container">
+								<a href="index.html" class="flex choice-content">
+									<div class="singer-avatar">
+										<img src="https://scontent.fsgn2-4.fna.fbcdn.net/v/t1.0-1/c0.1.958.958a/64494132_216123406031599_8462719138161229824_n.jpg?_nc_cat=101&_nc_oc=AQlJo6Z0I21-b_duKMzYz_EHcw05eMtt8KWbPauLhQngEWNgJQm3XcUKyxoA1ak4qNg&_nc_ht=scontent.fsgn2-4.fna&oh=deb22e1b0b0b2a8756fe717259788e42&oe=5E7938C8">
+									</div>
+									<div class="singer-title">
+										<div class="icon">
+											<i class="fas fa-star"></i>
+											<span> ZING CHOICE</span>
+										</div>
+										<div class="singer-name">Ngoc Thy bi dien
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="choice-item">
+							<div class="choice-container">
+								<a href="index.html" class="flex choice-content">
+									<div class="singer-avatar">
+										<img src="https://tin123.net/wp-content/uploads/2019/11/tr%E1%BA%A7n-d%E1%BA%A7n.jpg">
+									</div>
+									<div class="singer-title">
+										<div class="icon">
+											<i class="fas fa-star"></i>
+											<span> ZING CHOICE</span>
+										</div>
+										<div class="singer-name">Trần Dần Tiên Sinh
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="choice-item">
+							<div class="choice-container">
+								<a href="index.html" class="flex choice-content">
+									<div class="singer-avatar">
+										<img src="https://tin123.net/wp-content/uploads/2019/11/tr%E1%BA%A7n-d%E1%BA%A7n.jpg">
+									</div>
+									<div class="singer-title">
+										<div class="icon">
+											<i class="fas fa-star"></i>
+											<span> ZING CHOICE</span>
+										</div>
+										<div class="singer-name">Trần Dần Tiên Sinh
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col box-container">
+					<div class="box-title">TOP 100
+						<i class="fal fa-chevron-right right"></i>
+					</div>
+					<div class="flex box-list">
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/5/0/e/9/50e921647579ad659eaeec95afa449c2.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 100 bài hát nhạc trẻ hay nhất</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/7/b/7/7/7b776254ce9a9411155e6b62029c30e7.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 100 pop âu mỹ hay nhất</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/e/d/0/2/ed02380325ce8fb49fd40bb9d967c0d1.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 100 nhạc electronic/dance âu mỹ</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/2/5/3/a/253a8c97632d637a45713843efe6caee.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 100 nhạc trữ tình hay nhất</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/e/7/0/4/e704391c47726bd7a4d547b88751d48c.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 100 nhạc hàn quốc hay nhất</div>
+						</div>
+					</div>
+					<div class="flex more">
+						<div class="left">
+							<i class="fal fa-chevron-left go-icon"></i>
+						</div>
+						<div class="right">
+							<i class="fal fa-chevron-right go-icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col box-container">
+					<div class="box-title">Bài Hát Mới</div>
+					<div class="flex song-list">
+						<div class="flex flex-col song-item">
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex flex-col song-item">
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex flex-col song-item">
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex newsong">
+								<div class="newsong-image">
+									<img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg">
+								</div>
+								<div class="flex flex-col newsong-info">
+									<div class="newsong-name">Bánh Mì Không</div>
+									<div class="newsong-singer">Đạt G, DuUyen</div>
+								</div>
+								<div class="flex newsong-overlay">
+									<div class="icon-play">
+										<i class="fas fa-play"></i>
+									</div>
+									<div class="flex left">
+										<div class="icon-left">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fal fa-heart"></i>
+										</div>
+										<div class="icon-left">
+											<i class="fas fa-ellipsis-h"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex play-all">
+						<i class="fas fa-play"></i> 
+						<p>Nghe tất cả</p>
+					</div>
+				</div>
+				<div class="flex flex-col box-container">
+					<div class="box-title">Chủ Đề & Thể Loại
+						<i class="fal fa-chevron-right right"></i>
+					</div>
+					<div class="flex box-list">
+						<div class="flex flex-col type-item">
+							<div class="type-img">
+								<img src="https://photo-zmp3.zadn.vn/cover/d/e/a/e/deae7ab8481260c9edb48d5b3c4b6151.jpg">
+							</div>
+							<div class="flex type-overlay">
+								<div class="type-text">Trending</div>
+							</div>
+						</div>
+						<div class="flex flex-col type-item">
+							<div class="type-img">
+								<img src="https://photo-zmp3.zadn.vn/cover/1/e/0/f/1e0f4998259f2f8a0ae7de1a7110bb62.jpg">
+							</div>
+							<div class="flex type-overlay">
+								<div class="type-text">Nhạc Việt</div>
+							</div>
+						</div>
+						<div class="flex flex-col type-item">
+							<div class="type-img">
+								<img src="https://photo-zmp3.zadn.vn/cover/2/7/5/3/2753569ef5258e604e8eadf7a155a2ff.jpg">
+							</div>
+							<div class="flex type-overlay">
+								<div class="type-text">Nhạc Âu Mỹ</div>
+							</div>
+						</div>
+						<div class="flex flex-col type-item">
+							<div class="type-img">
+								<img src="https://photo-zmp3.zadn.vn/cover/a/e/d/3/aed3d129c85c532fbef3c5571bfed4c0.jpg">
+							</div>
+							<div class="flex type-overlay">
+								<div class="type-text">Nhạc Hàn</div>
+							</div>
+						</div>
+						<div class="flex flex-col type-item">
+							<div class="type-img">
+								<img src="https://photo-zmp3.zadn.vn/cover/b/2/6/3/b263d93573d43b840bb1716aca21604d.jpg">
+							</div>
+							<div class="flex type-overlay">
+								<div class="type-text">Nhạc Hoa</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex more">
+						<div class="left">
+							<i class="fal fa-chevron-left go-icon"></i>
+						</div>
+						<div class="right">
+							<i class="fal fa-chevron-right go-icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col box-container">
+					<div class="box-title">Album Hot
+						<i class="fal fa-chevron-right right"></i>
+					</div>
+					<div class="flex box-list">
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/5/0/e/9/50e921647579ad659eaeec95afa449c2.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 100 bài hát nhạc trẻ hay nhất</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/7/b/7/7/7b776254ce9a9411155e6b62029c30e7.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 100 pop âu mỹ hay nhất</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/e/d/0/2/ed02380325ce8fb49fd40bb9d967c0d1.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 100 nhạc electronic/dance âu mỹ</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/2/5/3/a/253a8c97632d637a45713843efe6caee.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 100 nhạc trữ tình hay nhất</div>
+						</div>
+						<div class="flex flex-col box-item">
+							<div class="box-img">
+								<img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/e/7/0/4/e704391c47726bd7a4d547b88751d48c.jpg">
+							</div>
+							<div class="box-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+							<div class="box-text">top 100 nhạc hàn quốc hay nhất</div>
+						</div>
+					</div>
+					<div class="flex more">
+						<div class="left">
+							<i class="fal fa-chevron-left go-icon"></i>
+						</div>
+						<div class="right">
+							<i class="fal fa-chevron-right go-icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col box-container">
+					<div class="box-title">MV Hot
+						<i class="fal fa-chevron-right right"></i>
+					</div>
+					<div class="flex mv-list">
+						<div class="mv-big">
+							<img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/7/7/f/2/77f28a9f1069c7c5e9a2a596f83be096.jpg">
+							<div class="mv-big-overlay">
+								<i class="fal fa-play-circle"></i>
+							</div>
+						</div>
+						<div class="flex flex-col mv-sm">
+							<div class="flex mv-col" style="margin-bottom: 20px;">
+								<div class="mv-item">
+									<div class="mv-img">
+										<img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/6/5/3/1/6531142210a1c87252af18dc8adde401.jpg">
+										<div class="mv-overlay">
+											<i class="fal fa-play-circle"></i>
+										</div>
+									</div>
+									<div class="flex flex-col mv-info">
+										<div class="mv-name">Vì Đó Là Em</div>
+										<div class="mv-singer">OSAD, Shin Hyun Woo</div>
+									</div>
+								</div>
+								<div class="mv-item">
+									<div class="mv-img">
+										<img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/7/7/f/2/77f28a9f1069c7c5e9a2a596f83be096.jpg">
+
+										<div class="mv-overlay">
+											<i class="fal fa-play-circle"></i>
+										</div>
+									</div>
+									<div class="flex flex-col mv-info">
+										<div class="mv-name">Em Một Mình Quen Rồi</div>
+										<div class="mv-singer">Dương Hoàng Yến</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex mv-col">
+								<div class="mv-item">
+									<div class="mv-img">
+										<img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/a/4/e/9/a4e93ae6ef0b81ce9359f6dcc6c30367.jpg">
+										<div class="mv-overlay">
+											<i class="fal fa-play-circle"></i>
+										</div>
+									</div>
+									<div class="flex flex-col mv-info">
+										<div class="mv-name">Bánh Mì Không</div>
+										<div class="mv-singer">Đạt G, DuUyen</div>
+									</div>
+								</div>
+								<div class="mv-item">
+									<div class="mv-img">
+										<img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/f/d/f/5/fdf52def4d0b848adc2bb6af4837b96e.jpg">
+										<div class="mv-overlay">
+											<i class="fal fa-play-circle"></i>
+										</div>
+									</div>
+
+									<div class="flex flex-col mv-info">
+										<div class="mv-name">Bánh Mì Không</div>
+										<div class="mv-singer">Đạt G, DuUyen</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex more">
+						<div class="left">
+							<i class="fal fa-chevron-left go-icon"></i>
+						</div>
+						<div class="right">
+							<i class="fal fa-chevron-right go-icon"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="flex footer-top">
+					<div class="ft-logo"></div>
+					<div class="ft-text">Hãy đăng nhập để khám phá thêm nhiều bài hát dành riêng cho bạn</div>
+					<div class="ft-login">
+						<a href="index.html">Đăng Nhập</a>
+					</div>
+				</div>
+				<div class="flex flex-col footer-bottom">
+					<div class="flex copyright">
+						<div class="ft-logo"></div>
+						<p class="ft-sm">Một sản phẩm của Zalo</p>
+					</div>
+					<div class="flex contact">
+						<a href="index.html" class="ft-sm">Giới thiệu</a>
+						<div class="symbol">•</div>
+						<a href="index.html" class="ft-sm">Liên hệ</a>
+						<div class="symbol">•</div>
+						<a href="index.html" class="ft-sm">Quảng cáo</a>
+						<div class="symbol" class="ft-sm hide-dot">•</div>
+						<a href="index.html" class="ft-sm">Góp ý</a>
+						<div class="symbol">•</div>
+						<a href="index.html" class="ft-sm">Thoả thuận sử dụng</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+
+
+
+</body>
+</html>
